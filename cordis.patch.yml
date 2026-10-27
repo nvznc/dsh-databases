@@ -1,23 +1,19 @@
-# dsh-databases bundle: monta este paquete como servidor MCP de bases de datos.
+# dsh-databases bundle: monta el servidor MCP de bases de datos.
 #
-# Las credenciales NO van aquí: el servidor las lee de su propio .env, de
+# Credenciales: NO van aquí. El servidor las lee de su .env, de
 # configs/connections.json o de las conexiones guardadas con save_connection.
 #
-# El bloque va comentado a propósito: `args`/`cwd` dependen de dónde esté el
-# paquete en cada máquina. Copia la forma **insert:** del README (sección
-# «Registro en DSH») sustituyendo <RUTA> por la ruta de esta instalación, o
-# instala el paquete como bundle desde el plugin market.
-#
-# - insert:
-#     - id: mcp-databases
-#       name: '@deepseek-ai/dsh-mcp-client'
-#       config:
-#         serverName: db
-#         transport: stdio
-#         command: 'node'
-#         args:
-#           - '<RUTA>/dist/index.js'
-#         cwd: '<RUTA>'
-#         env:
-#           DSH_MCP_SQL_HOME: '<RUTA>/.data'
-#         toolCallTimeoutMs: 120000
+# Este paquete usa `dsh.bundle.patch`, así que está pensado para instalarse como
+# plugin (market o `dsh plugin add`). Los campos del config se aplican tal cual;
+# si mueves el paquete a otra ruta, ajusta `args`/`cwd`.
+- insert:
+    - id: mcp-databases
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: db
+        transport: stdio
+        command: 'node'
+        args:
+          - 'C:/Users/Antho/Downloads/mcp-sql/dist/index.js'
+        cwd: 'C:/Users/Antho/Downloads/mcp-sql'
+        toolCallTimeoutMs: 120000
