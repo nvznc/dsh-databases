@@ -1,0 +1,99 @@
+{
+  "format": 1,
+  "title": {
+    "en": "DSH Databases",
+    "es": "Bases de datos DSH"
+  },
+  "description": {
+    "en": "MCP server for SQL Server, MySQL/MariaDB and PostgreSQL with named connections",
+    "es": "Servidor MCP para SQL Server, MySQL/MariaDB y PostgreSQL con conexiones con nombre"
+  },
+  "metadata": {
+    "categories": {
+      "data": {
+        "title": {
+          "en": "Data",
+          "es": "Datos"
+        }
+      },
+      "database": {
+        "title": {
+          "en": "Databases",
+          "es": "Bases de datos"
+        }
+      }
+    },
+    "labels": {
+      "mcp": {
+        "title": {
+          "en": "MCP",
+          "es": "MCP"
+        }
+      },
+      "local": {
+        "title": {
+          "en": "Local",
+          "es": "Local"
+        }
+      }
+    },
+    "sortKeys": {
+      "version": {
+        "title": {
+          "en": "Release",
+          "es": "Versión"
+        },
+        "order": "desc"
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "dsh-databases",
+      "title": {
+        "en": "Databases (MCP)",
+        "es": "Bases de datos (MCP)"
+      },
+      "description": {
+        "en": "Explore and query SQL Server, MySQL and PostgreSQL from DSH with named connections, read-only guard and optional writes.",
+        "es": "Explora y consulta SQL Server, MySQL y PostgreSQL desde DSH con conexiones con nombre, guarda de solo lectura y escritura opcional."
+      },
+      "author": "nvznc",
+      "homepage": "https://github.com/nvznc/dsh-databases#readme",
+      "repository": {
+        "url": "https://github.com/nvznc/dsh-databases"
+      },
+      "metadata": {
+        "category": "database",
+        "labels": [
+          "mcp"
+        ],
+        "keywords": [
+          "sql",
+          "sqlserver",
+          "mysql",
+          "postgres",
+          "database",
+          "mcp"
+        ],
+        "sortKeys": {
+          "version": 1
+        }
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1793130321,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/nvznc/dsh-databases",
+            "commit": "7af5058d70dfb9e7362f1e0b52c157dc67d0a12c"
+          },
+          "engines": {
+            "dsh": ">=0.2.0-rc.3"
+          }
+        }
+      ]
+    }
+  ]
+}
