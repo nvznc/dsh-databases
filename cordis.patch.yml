@@ -1,0 +1,23 @@
+# dsh-databases bundle: monta este paquete como servidor MCP de bases de datos.
+#
+# Las credenciales NO van aquí: el servidor las lee de su propio .env, de
+# configs/connections.json o de las conexiones guardadas con save_connection.
+#
+# El bloque va comentado a propósito: `args`/`cwd` dependen de dónde esté el
+# paquete en cada máquina. Copia la forma **insert:** del README (sección
+# «Registro en DSH») sustituyendo <RUTA> por la ruta de esta instalación, o
+# instala el paquete como bundle desde el plugin market.
+#
+# - insert:
+#     - id: mcp-databases
+#       name: '@deepseek-ai/dsh-mcp-client'
+#       config:
+#         serverName: db
+#         transport: stdio
+#         command: 'node'
+#         args:
+#           - '<RUTA>/dist/index.js'
+#         cwd: '<RUTA>'
+#         env:
+#           DSH_MCP_SQL_HOME: '<RUTA>/.data'
+#         toolCallTimeoutMs: 120000
