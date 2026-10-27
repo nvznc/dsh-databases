@@ -5,9 +5,12 @@ dist/
 *.log
 .DS_Store
 
-# Datos locales: conexiones con credenciales, caché de npm y scratch de pruebas
+# Datos locales: conexiones con credenciales, cache de npm y scratch de pruebas
 configs/connections.json
 .npm-cache/
 .dshwork/
 .dshhome/
 .data/
+
+# El indice publicable vive en docs/ (GitHub Pages); site/ es solo local
+site/
