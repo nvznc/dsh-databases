@@ -83,11 +83,11 @@
       "versions": [
         {
           "version": "1.0.0",
-          "publishTimestamp": 1793119539,
+          "publishTimestamp": 1793130321,
           "source": {
             "type": "git",
             "url": "https://github.com/nvznc/dsh-databases",
-            "commit": "0123456789abcdef0123456789abcdef01234567"
+            "commit": "7af5058d70dfb9e7362f1e0b52c157dc67d0a12c"
           },
           "engines": {
             "dsh": ">=0.2.0-rc.3"
