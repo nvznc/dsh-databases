@@ -1,0 +1,34 @@
+{
+  "connections": [
+    {
+      "name": "farmaluz",
+      "engine": "mssql",
+      "host": "localhost",
+      "port": 1433,
+      "database": "FarmaluzAdminDb",
+      "user": "mcp_sql",
+      "password": "CambiaEstaClave1!",
+      "options": { "encrypt": true, "trustServerCertificate": true }
+    },
+    {
+      "name": "mysql-local",
+      "engine": "mysql",
+      "host": "localhost",
+      "port": 3306,
+      "database": "mysql",
+      "user": "mcp",
+      "password": "CambiaEstaClave1!",
+      "options": { "ssl": false }
+    },
+    {
+      "name": "postgres-local",
+      "engine": "postgres",
+      "host": "localhost",
+      "port": 5432,
+      "database": "postgres",
+      "user": "mcp",
+      "password": "CambiaEstaClave1!",
+      "options": { "ssl": false }
+    }
+  ]
+}
